@@ -58,7 +58,7 @@ const ThemeSelector = () => {
                         name='theme-dropdown'
                         className='theme-controller btn btn-sm btn-block btn-ghost justify-start'
                         aria-label='Dracula'
-                        value='Dracula'
+                        value='dracula'
                      />
                   </li>
                   <li>
