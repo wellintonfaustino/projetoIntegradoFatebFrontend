@@ -6,8 +6,8 @@ import Navbar from './module/components/navbar';
 
 function App() {
    return (
-      <div className=''>
-         <Navbar />
+      <div className='flex flex-col items-center justify-center'>
+         <Navbar className='absolute' />
 
          <CadastrarClientes />
       </div>

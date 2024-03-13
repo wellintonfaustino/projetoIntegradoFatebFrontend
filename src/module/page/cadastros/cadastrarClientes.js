@@ -5,19 +5,22 @@ import { FaTreeCity } from 'react-icons/fa6';
 
 const CadastrarClientes = () => {
    return (
-      <div className='w-96 flex flex-col  justify-center items-center'>
-         <div className=' '>
-            <label className='input input-bordered flex items-center gap-2 mb-5 w-full'>
-               <BsPersonBoundingBox className='text-accent' />
+      <div className='py-6 px-14 flex flex-col justify-center items-center mt-5 border border-base-200 rounded-box'>
+         <div className='text-base-content text-3xl font-mono'>
+            Cadastrar Cliente
+         </div>
+         <div className='mt-5 '>
+            <label className='input input-bordered flex items-center gap-2 mb-3 w-full'>
+               <BsPersonBoundingBox className='text-accent text-2xl ' />
                <input
                   type='text'
-                  className='grow'
-                  placeholder='Username'
+                  className='grow w-80'
+                  placeholder='Nome Cliente'
                />
             </label>
 
-            <label className='input input-bordered flex items-center gap-2 mb-5 w-full'>
-               <PiKeyDuotone className='text-accent' />
+            <label className='input input-bordered flex items-center gap-2 mb-3 w-full'>
+               <PiKeyDuotone className='text-accent text-2xl ' />
                <input
                   type='number'
                   className='grow'
@@ -26,13 +29,16 @@ const CadastrarClientes = () => {
             </label>
 
             <label className='input input-bordered flex items-center gap-2 w-full'>
-               <FaTreeCity className='text-accent' />
+               <FaTreeCity className='text-accent text-2xl ' />
                <input
                   type='text'
                   className='grow'
                   placeholder='Cidade'
                />
             </label>
+         </div>
+         <div className='mt-4'>
+            <button className='btn btn-primary px-24'>Cadastrar</button>
          </div>
       </div>
    );
