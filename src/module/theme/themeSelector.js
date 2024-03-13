@@ -1,61 +1,77 @@
 import { React, useEffect } from 'react';
-import { themeChange } from 'theme-change';
 
 const ThemeSelector = () => {
-   useEffect(() => {
-      themeChange(false);
-   }, []);
-
    return (
       <div>
-         {' '}
-         <div className='mt-3 flex justify-center items-center'>
-            <select
-               className='bg-primary text-primary-content'
-               data-choose-theme
-            >
-               <option
-                  disabled
-                  value=''
+         <div className='flex justify-center items-center'>
+            <div className='dropdown dropdown-end'>
+               <div
+                  tabIndex={0}
+                  role='button'
+                  className='btn'
                >
-                  Selecione um tema
-               </option>
-
-               <option value='mytheme'>Teste Tema Padrão</option>
-               <option value='light'>Light</option>
-               <option value='retro'>Retro</option>
-               <option value='dracula'>Dracula</option>
-               <option value='cyberpunk'>Cyberpunk</option>
-               <option value='dark'>dark</option>
-               <option value='cupcake'>cupcake</option>
-               <option value='bumblebee'>bumblebee</option>
-               <option value='emerald'>emerald</option>
-               <option value='corporate'>corporate</option>
-               <option value='synthwave'>synthwave</option>
-               <option value='retro'>retro</option>
-               <option value='valentine'>valentine</option>
-               <option value='halloween'>halloween</option>
-               <option value='garden'>garden</option>
-               <option value='forest'>forest</option>
-               <option value='aqua'>aqua</option>
-               <option value='lofi'>lofi</option>
-               <option value='pastel'>pastel</option>
-               <option value='fantasy'>fantasy</option>
-               <option value='wireframe'>wireframe</option>
-               <option value='black'>black</option>
-               <option value='luxury'>luxury</option>
-               <option value='cmyk'>cmyk</option>
-               <option value='autumn'>autumn</option>
-               <option value='business'>business</option>
-               <option value='acid'>acid</option>
-               <option value='lemonade'>lemonade</option>
-               <option value='night'>night</option>
-               <option value='coffee'>coffee</option>
-               <option value='winter'>winter</option>
-               <option value='dim'>dim</option>
-               <option value='nord'>nord</option>
-               <option value='sunset'>sunset</option>
-            </select>
+                  Tema
+                  <svg
+                     width='12px'
+                     height='12px'
+                     className='h-2 w-2 fill-current opacity-60 inline-block'
+                     xmlns='http://www.w3.org/2000/svg'
+                     viewBox='0 0 2048 2048'
+                  >
+                     <path d='M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z'></path>
+                  </svg>
+               </div>
+               <ul
+                  tabIndex={0}
+                  className='dropdown-content z-[1] p-2 shadow-2xl bg-base-300 rounded-box w-52'
+               >
+                  <li>
+                     <input
+                        type='radio'
+                        name='theme-dropdown'
+                        className='theme-controller btn btn-sm btn-block btn-ghost justify-start'
+                        aria-label='Default'
+                        value='mytheme'
+                     />
+                  </li>
+                  <li>
+                     <input
+                        type='radio'
+                        name='theme-dropdown'
+                        className='theme-controller btn btn-sm btn-block btn-ghost justify-start'
+                        aria-label='Light'
+                        value='light'
+                     />
+                  </li>
+                  <li>
+                     <input
+                        type='radio'
+                        name='theme-dropdown'
+                        className='theme-controller btn btn-sm btn-block btn-ghost justify-start'
+                        aria-label='Retro'
+                        value='retro'
+                     />
+                  </li>
+                  <li>
+                     <input
+                        type='radio'
+                        name='theme-dropdown'
+                        className='theme-controller btn btn-sm btn-block btn-ghost justify-start'
+                        aria-label='Dracula'
+                        value='Dracula'
+                     />
+                  </li>
+                  <li>
+                     <input
+                        type='radio'
+                        name='theme-dropdown'
+                        className='theme-controller btn btn-sm btn-block btn-ghost justify-start'
+                        aria-label='Cyberpunk'
+                        value='cyberpunk'
+                     />
+                  </li>
+               </ul>
+            </div>
          </div>
       </div>
    );

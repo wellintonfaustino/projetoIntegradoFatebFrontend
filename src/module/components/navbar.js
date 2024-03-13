@@ -1,46 +1,23 @@
 import React from 'react';
-import { PiShoppingCartSimpleDuotone } from 'react-icons/pi';
+import ThemeSelector from '../theme/themeSelector';
 
 const Navbar = () => {
    return (
-      <div class='navbar bg-primary text-primary-content w-screen'>
-         <div class='flex-1'>
-            <a class='btn btn-ghost text-xl'>NavBar</a>
+      <div className='navbar bg-primary'>
+         <div className='flex-1'>
+            <a className='btn btn-ghost text-xl'>daisyUI</a>
          </div>
-         <div class='flex-none'>
-            <div class='dropdown dropdown-end'>
-               <div
-                  tabindex='0'
-                  role='button'
-                  class='btn btn-ghost btn-circle'
-               >
-                  <div class='indicator'>
-                     <PiShoppingCartSimpleDuotone className='w-6 h-6 text-primary-content' />
-                     <span class='badge badge-sm indicator-item'>8</span>
-                  </div>
-               </div>
-               <div
-                  tabindex='0'
-                  class='mt-3 z-[1] card card-compact dropdown-content w-52 bg-base-100 shadow'
-               >
-                  <div class='card-body bg-info text-info-content  rounded-box'>
-                     <span class='font-bold text-lg'>8 Items</span>
-                     <span class=''>Subtotal: $999</span>
-                     <div class='card-actions'>
-                        <button class='btn btn-primary btn-block'>
-                           View cart
-                        </button>
-                     </div>
-                  </div>
-               </div>
+         <div className='flex-none'>
+            <div className='py-2 mr-3'>
+               <ThemeSelector />
             </div>
-            <div class='dropdown dropdown-end'>
+            <div className='dropdown dropdown-end'>
                <div
-                  tabindex='0'
+                  tabIndex={0}
                   role='button'
-                  class='btn btn-ghost btn-circle avatar'
+                  className='btn btn-ghost btn-circle avatar'
                >
-                  <div class='w-10 rounded-full'>
+                  <div className='w-10 rounded-full'>
                      <img
                         alt='Tailwind CSS Navbar component'
                         src='https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg'
@@ -48,13 +25,13 @@ const Navbar = () => {
                   </div>
                </div>
                <ul
-                  tabindex='0'
-                  class='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-accent text-accent-content rounded-box w-52'
+                  tabIndex={0}
+                  className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-primary-100 rounded-box w-52'
                >
                   <li>
-                     <a class='justify-between'>
+                     <a className='justify-between'>
                         Profile
-                        <span class='badge'>New</span>
+                        <span className='badge'>New</span>
                      </a>
                   </li>
                   <li>
