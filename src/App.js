@@ -1,13 +1,13 @@
 import './App.css';
 import Navbar from './module/components/navbar';
-import CadastroCategoria from './module/page/cadastros/cadastrarCategoria';
+import Vendas from './module/page/vendas/vendas';
 
 function App() {
    return (
       <div className='flex flex-col items-center justify-center'>
          <Navbar className='absolute' />
 
-         <CadastroCategoria />
+         <Vendas />
       </div>
    );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsPersonBoundingBox } from 'react-icons/bs';
 import { TbNumber } from 'react-icons/tb';
+import { FaBuildingUser } from 'react-icons/fa6';
 
 const CadastrarFornecedor = () => {
    return (
@@ -15,6 +16,15 @@ const CadastrarFornecedor = () => {
                   type='text'
                   className='grow w-80'
                   placeholder='Nome Fornecedor'
+               />
+            </label>
+
+            <label className='input input-bordered flex items-center gap-2 mb-3 w-full'>
+               <FaBuildingUser className='text-accent text-2xl ' />
+               <input
+                  type='text'
+                  className='grow w-80'
+                  placeholder='Nome Empresa'
                />
             </label>
 
