@@ -59,7 +59,7 @@ const Vendas = () => {
                   />
                </div>
 
-               <div className='flex text-neutral text-xl font-mono font-semibold'>
+               <div className='flex text-secondary-content text-xl font-mono font-semibold'>
                   <div className='border bg-secondary border-primary px-5 py-2 text-center'>
                      Placa de video rtx 1200 5GB
                   </div>
@@ -79,17 +79,17 @@ const Vendas = () => {
                   <option>3</option>
                </select>
                <div
-                  className='py-2 ml-4 lg:tooltip '
+                  className='py-2 ml-4 lg:tooltip'
                   data-tip='Editar'
                >
-                  <IoSync className='border border-opacity-25 border-secondary rounded-box  text-3xl  text-warning' />
+                  <IoSync className='border border-opacity-25 border-secondary rounded-box text-3xl bg-warning text-warning-content' />
                </div>
 
                <div
-                  className='py-2 ml-4 lg:tooltip '
+                  className='py-2 ml-4 lg:tooltip  '
                   data-tip='Apagar'
                >
-                  <MdBlock className='border border-opacity-25 border-secondary rounded-box  text-3xl text-error ' />
+                  <MdBlock className='border border-opacity-25 border-secondary rounded-box text-3xl bg-error text-error-content ' />
                </div>
             </div>
          </div>

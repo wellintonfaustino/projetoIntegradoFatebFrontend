@@ -5,7 +5,9 @@ const Navbar = () => {
    return (
       <div className='navbar bg-primary'>
          <div className='flex-1'>
-            <a className='btn btn-ghost text-xl'>Nome Projeto</a>
+            <div className='btn btn-ghost text-xl text-primary-content'>
+               Projeto Integrado
+            </div>
          </div>
          <div className='flex-none'>
             <div className='py-2 mr-3'>
@@ -26,19 +28,19 @@ const Navbar = () => {
                </div>
                <ul
                   tabIndex={0}
-                  className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-primary-100 rounded-box w-52'
+                  className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-52'
                >
                   <li>
-                     <a className='justify-between'>
+                     <div className='justify-between'>
                         Profile
                         <span className='badge'>New</span>
-                     </a>
+                     </div>
                   </li>
                   <li>
-                     <a>Settings</a>
+                     <div>Settings</div>
                   </li>
                   <li>
-                     <a>Logout</a>
+                     <div>Logout</div>
                   </li>
                </ul>
             </div>
